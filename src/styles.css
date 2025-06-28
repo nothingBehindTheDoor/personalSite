@@ -7,5 +7,64 @@
 }
 
 html {
+  --main-text-color: rgb(33, 36, 40);
+  --html-background-color: rgb(188, 195, 201);
+  --button-color: rgb(224, 223, 221);
   font-size: clamp(12px, max(2vh, 2vw), 24px);
+  font-family: monospace;
+  background-color: var(--html-background-color);
+  color: var(--main-text-color);
+}
+
+body {
+  max-width: 1000px;
+  height: 97vh;
+  margin: 1.5vh auto;
+  border-radius: 0.4rem;
+  background-color: whitesmoke;
+  display: grid;
+  grid-template: minmax(4vh, 4rem) minmax(2vh, 2.5rem) 1fr minmax(4vh, 4rem) / 1fr;
+}
+
+body {
+  > * {
+    margin: 0 1rem;
+  }
+
+  > main {
+    margin: 0 0rem;
+    padding: 1rem;
+  }
+}
+
+h2 {
+  font-size: 1.2rem;
+}
+
+header {
+  padding-top: 1rem;
+}
+
+/* NAV STYLING */
+
+nav {
+  display: flex;
+  gap: 1rem;
+  align-items: end;
+}
+
+nav button {
+  background-color: var(--button-color);
+  border: 1px solid var(--html-background-color);
+  font-size: 0.9rem;
+  padding: 0.15rem 0.3rem;
+  border-top-left-radius: 0.3rem;
+  border-top-right-radius: 0.3rem;
+  max-height: 3rem;
+}
+
+/* MAIN STYLING */
+
+main {
+  border-top: 2px solid grey;
 }
